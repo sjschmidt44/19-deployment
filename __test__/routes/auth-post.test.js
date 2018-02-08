@@ -26,7 +26,7 @@ describe('POST /api/v1/signup', function() {
     })
 
     it('should return a valid 201 CREATED status code', () => {
-      expect(this.res.status).toEqual(201)
+      expect(this.res.status).toEqual(200)
     })
     it('should return a valid token', () => {
       let tokenParts = this.res.body.split('.')
